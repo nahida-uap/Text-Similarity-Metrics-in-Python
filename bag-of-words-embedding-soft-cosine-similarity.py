@@ -56,5 +56,13 @@ def soft_cosine_similarity_matrix(sentences):
     cossim_mat = pd.DataFrame([[round(softcossim(sentences[i],sentences[j], similarity_matrix) ,2) for i, j in zip(x,y)] for y, x in zip(xx, yy)])
     return cossim_mat
 
-print(documents)
+#print(documents)
 soft_cosine_similarity_matrix(sentences)
+
+#        0	      1	      2	      3	      4	      5
+#   0	1.00	0.46	0.41	0.87	0.60	0.82
+#   1	0.46	1.00	0.59	0.40	0.41	0.24
+#   2	0.41	0.59	1.00	0.35	0.50	0.29
+#   3	0.87	0.40	0.35	1.00	0.52	0.71
+#   4	0.60	0.41	0.50	0.52	1.00	0.58
+#   5	0.82	0.24	0.29	0.71	0.58	1.00
