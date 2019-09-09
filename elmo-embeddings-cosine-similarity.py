@@ -22,11 +22,8 @@ with tf.Session() as sess:
 #print the embedding vectors for input text
 #print(x)
 
-def get_cosine_sim(strs): 
-    vectors = [t for t in strs]
-    return cosine_similarity(vectors)
-
-sim = get_cosine_sim(x)
+#compute cosine similarity
+sim = cosine_similarity(x)
 print(sim)
 
 
