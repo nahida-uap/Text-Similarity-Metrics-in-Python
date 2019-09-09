@@ -59,7 +59,7 @@ def soft_cosine_similarity_matrix(sentences):
 #print(documents)
 soft_cosine_similarity_matrix(sentences)
 
-#        0	    1	      2	      3	      4	      5
+#       0       1       2       3       4       5
 #   0	1.00	0.46	0.41	0.87	0.60	0.82
 #   1	0.46	1.00	0.59	0.40	0.41	0.24
 #   2	0.41	0.59	1.00	0.35	0.50	0.29
